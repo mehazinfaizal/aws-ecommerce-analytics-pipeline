@@ -1,6 +1,7 @@
 # AWS E-Commerce Sales Data Lake
 
-An end-to-end serverless data engineering project that cleans the public **UCI Online Retail** dataset using AWS Lambda, stores raw and curated CSV files in Amazon S3, and analyzes sales with Amazon Athena.
+Solved a data-readiness problem by automating the cleaning, validation, deduplication, and transformation of raw e-commerce transactions into structured data for business analytics.
+Tools used: Python, S3, Lambda, Athena
 
 ## Architecture
 
