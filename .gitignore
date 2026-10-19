@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# AWS credentials and local configuration
+.aws/
+credentials
+config
+
+# Data files (do not commit source/customer-level rows)
+*.csv
+*.xlsx
+*.xls
+data/
+raw/
+processed/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
