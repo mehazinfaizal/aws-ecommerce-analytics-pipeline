@@ -22,7 +22,17 @@ SELECT
 FROM ecommerce_sales
 GROUP BY stock_code
 ORDER BY gross_sales DESC
-LIMIT 20;
+LIMIT 15;
 
+-- 4. gross and units sold by stockcode
+SELECT
+    stock_code,
+    MAX(description) AS product_name,
+    SUM(quantity) AS units_sold,
+    ROUND(SUM(total_amount), 2) AS gross_sales_gbp
+FROM ecommerce_sales
+GROUP BY stock_code
+ORDER BY gross_sales_gbp DESC
+LIMIT 10;
 
 
